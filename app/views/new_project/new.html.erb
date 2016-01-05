@@ -1,0 +1,7 @@
+<h1>Project</h1>
+<%= form_for (@newproject),url: {action: "create"} do |f| %>
+Name :<%= f.text_field :name%><br></br>
+Description:<%= f.text_field :Description %><br></br>
+<%= f.submit 'save' %>
+
+<% end %> 

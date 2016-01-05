@@ -1,0 +1,4 @@
+<h1>Time Sheet</h1>
+<%= form_for(@timesheet),url: {action: "create"} do |f| %>
+<%= f.select(:new_project_id,options_from_collection_for_select(NewProject.all,'id','name',f.object.new_project_id)) %>
+<% end %>

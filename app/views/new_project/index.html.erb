@@ -1,0 +1,21 @@
+<h1>Listing of projects </h1>
+<table>
+<thead>
+<tr>
+	<th>Name</th>
+	<th>Description</th>
+	<th colspan = "4"></th>
+</tr>
+</thead>
+<tbody>
+<%@newproject.each do |newproject| %>
+<tr>
+<td><%= newproject.name%></td>
+<td><%= newproject.Description %></td>
+</tr>
+<% end %>
+</tbody>
+</table>
+<br>
+<%= link_to 'Time sheet', new_new_project_timesheet_path %>
+
